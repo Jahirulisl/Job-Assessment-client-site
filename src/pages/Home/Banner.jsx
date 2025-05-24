@@ -1,5 +1,6 @@
 import React from "react";
 import * as motion from "motion/react-client"
+import { easeOut } from "motion";
 
 const Banner = () => {
   return (
@@ -12,9 +13,10 @@ const Banner = () => {
         />
         </div>
         <div className="flex-1">
-          <h1 className="text-5xl font-bold">Latest Jobs For you!</h1>
+         
           <motion.h1
-          animate={{x:50, color:['red']}}
+          animate={{x:50, color:['green']}}
+          transition={{duration:2,delay:1,ease:easeOut,repeat:Infinity}}
           className="text-5xl font-bold">Latest Jobs For you!</motion.h1>
           <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
