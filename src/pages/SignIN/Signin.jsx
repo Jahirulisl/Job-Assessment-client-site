@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import signinAnimationData from '../../assets/lotti/signin.json'
 import Lottie from 'lottie-react';
 import AuthContext from '../../context/AuthContext/AuthContext';
+import SocialLogin  from '../Share/SocialLogin';
  const Signin = () => {
    //for context hooks start>
   const { singInUser}=useContext(AuthContext);
@@ -41,6 +42,7 @@ import AuthContext from '../../context/AuthContext/AuthContext';
           <div><a className="link link-hover">Forgot password?</a></div>
           <button className="btn btn-neutral mt-4">Login</button>
         </form>
+        <SocialLogin></SocialLogin>
       </div>
     </div>
   </div>
